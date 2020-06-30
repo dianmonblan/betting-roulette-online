@@ -1,0 +1,27 @@
+{
+  "name": "betting-roulette-online",
+  "version": "1.0.0",
+  "description": "12 reglas de Clean Code mediante ruleta de apuestas online.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianmonbla/betting-roulette-online.git"
+  },
+  "keywords": [
+    "Clena",
+    "Code",
+    "Online",
+    "Betting",
+    "Roulette",
+    "Masivian"
+  ],
+  "author": "dmontoya",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dianmonbla/betting-roulette-online/issues"
+  },
+  "homepage": "https://github.com/dianmonbla/betting-roulette-online#readme"
+}

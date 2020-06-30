@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 # Environment variables
 ENV NODE_ENV=null
 ENV PORT=3000
+ENV STRIP_TAGS_JSONP=")]}',\n"
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied

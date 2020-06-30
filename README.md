@@ -6,8 +6,9 @@
 
 Environment variables
 ```
-NODE_ENV = null | producción    // Environment app default null
-PORT = number                   // Listening app defalut 3000
+NODE_ENV = null | producción    // Environment app. default=null
+PORT = number                   // Listening app. defalut=3000
+STRIP_TAGS_JSONP = any          // Strip tags no propagation JSONP. defalut=)]}',\n
 ```
 
 Install packages 

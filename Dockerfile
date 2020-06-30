@@ -1,5 +1,8 @@
 FROM node:12
 
+# Install pm2 applicaction balance
+RUN npm install pm2 -g
+
 # Create app directory
 WORKDIR /usr/src/app
 
@@ -23,4 +26,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-CMD [ "node", "bin/www" ]
+CMD [ "pm2-runtime", "bin/www" ]

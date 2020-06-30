@@ -18,3 +18,12 @@ Install packages
 
 Command run
 ```DEBUG=app:* npm start```
+
+## Database MongoDB
+[Horizontal scaling](https://docs.mongodb.com/manual/sharding/)
+[Deploy a Replica Set](https://docs.mongodb.com/manual/tutorial/deploy-replica-set/)
+
+## PM2 daemon process manager
+[Applicaction balance](https://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/)
+[Cluster Mode](https://pm2.keymetrics.io/docs/usage/cluster-mode/)
+[Docker balance](https://pm2.keymetrics.io/docs/usage/docker-pm2-nodejs/)

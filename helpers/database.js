@@ -8,14 +8,16 @@ if (!db) {
         NAME_DATABASE = process.env.NAME_DATABASE || 'betting-roulette'
 
     const client = new MongoClient(URL_DATABASE, { useUnifiedTopology: true })
-    client.connect(function (error) {
+    client.connect((error) => {
         if (error)
             throw "Connected error database to server"
 
         debug("Connected successfully database to server")
 
         db = client.db(NAME_DATABASE)
+
+        debug("Database", db)
     })
 }
 
-module.exports = db
+module.exports = () => db

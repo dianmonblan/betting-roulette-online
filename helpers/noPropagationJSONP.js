@@ -24,9 +24,8 @@ module.exports = function (request, response, next) {
             }
         }
 
-        const app = this.app,
-            REPLACER = app.get('json replacer'),
-            JSON_SPACES = app.get('json spaces'),
+        const REPLACER = this.app.get('json replacer'),
+            JSON_SPACES = this.app.get('json spaces'),
             STRIP_TAGS_JSONP = process.env.STRIP_TAGS_JSONP || ")]}',\n"
 
         var body

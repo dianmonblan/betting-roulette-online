@@ -4,7 +4,7 @@
 
 ## Start-up development - UBUNTU
 
-Environment Variables
+Environment variables
 ```
 NODE_ENV = null | producción    // Environment app default null
 PORT = number                   // Listening app defalut 3000

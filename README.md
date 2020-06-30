@@ -1,6 +1,17 @@
 # betting-roulette-online
+
 12 reglas de Clean Code mediante ruleta de apuestas online.
 
 ## Start-up development - UBUNTU
-Install packages `npm install`
-Command `set DEBUG=app:* & npm start`
+
+Environment Variables
+```
+NODE_ENV = null | producción    // Environment app default null
+PORT = number                   // Listening app defalut 3000
+```
+
+Install packages 
+```npm install```
+
+Command run
+```set DEBUG=app:* & npm start```

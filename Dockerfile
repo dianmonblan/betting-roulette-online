@@ -7,6 +7,8 @@ WORKDIR /usr/src/app
 ENV NODE_ENV=null
 ENV PORT=3000
 ENV STRIP_TAGS_JSONP=")]}',\n"
+ENV URL_DATABASE="mongodb://localhost:27017"
+ENV NAME_DATABASE="betting-roulette"
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied

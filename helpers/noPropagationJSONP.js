@@ -3,7 +3,7 @@
  * over JSONP requests. The implementation is based on express's native 
  * response.json () method.
  */
-const debug = require("debug")("app:noPropagationJSONP"),
+const debug = require("debug")("app:helpers:noPropagationJSONP"),
     deprecate = require('depd')('express')
 
 module.exports = function (request, response, next) {

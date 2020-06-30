@@ -3,17 +3,20 @@ const express = require('express'),
 
 var app = express()
 
-app.use(require('morgan')('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(require('cookie-parser')());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(require('morgan')('dev'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+app.use(require('cookie-parser')())
+app.use(express.static(path.join(__dirname, 'public')))
+
+// Connect database
+require('./helpers/database')
 
 // No propagation JSONP
-app.use(require('./helpers/noPropagationJSONP'));
+app.use(require('./helpers/noPropagationJSONP'))
 
 // Public end-points
-app.use('/', require('./routes/index'));
+app.use('/', require('./routes/index'))
 
 // Connect user
 app.use(function (request, response, next) {
@@ -21,12 +24,12 @@ app.use(function (request, response, next) {
 })
 
 // Private end-points
-app.use('/users', require('./routes/users'));
+app.use('/users', require('./routes/users'))
 
 // Default handler error
 app.use(function (error, request, response, next) {
-    response.status(error.status || 500);
-    return response.json({ error: error });
-});
+    response.status(error.status || 500)
+    return response.json({ error: error })
+})
 
-module.exports = app;
+module.exports = app

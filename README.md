@@ -19,6 +19,9 @@ Install packages
 Command run
 ```DEBUG=app:* npm start```
 
+Listening for default
+```http://localhost:3000/```
+
 ## Database MongoDB
 [Horizontal scaling](https://docs.mongodb.com/manual/sharding/)
 [Deploy a Replica Set](https://docs.mongodb.com/manual/tutorial/deploy-replica-set/)
